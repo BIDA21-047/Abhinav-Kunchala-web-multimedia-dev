@@ -8,13 +8,16 @@
     <meta name="abhinav" content="movie theater website">
     <!--The following code links a icons to the webpage-->
     <script src="https://kit.fontawesome.com/922c91d3b0.js" crossorigin="anonymous"></script>
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="/web-multimedia-dev/css/styles.css">
     <title> 
         Movie Works|Cinemas
     </title>
 </head>
 
 <header> 
-    <ul class="Navigation">
+    <ul class="navigation">
         <li><a href="#">Home</a></li>
         <li><a href="#">Now Showing</a></li>
         <li><a href="#">Genre</a></li>
@@ -30,12 +33,34 @@
 </header>
 
 
-<body>
+<body onload="slider()">
     <div class="banner">
         <div class="slider">
             <img src="/web-multimedia-dev/media/slides/slide1.jpg">
         </div>
     </div>
+<script>
+    var slideImg = document.getElementById("slideImg");
+    var images = new Array(
+        "/media/slides/slide1.jpg" , 
+        "/media/slides/slide2.jpg" ,
+        "/media/slides/slide3.jpg" , 
+        "/media/slides/slide4.jpg"
+    );
+
+    var len = images.length;
+    var i = 0;
+
+    function slider(){
+        if(i>len-1){
+            i=0;
+        }
+        slideImg.src = images[i]
+        i++;
+        setTimeout("slider()" , 4000)
+
+    }
+</script>
 </body>
 
 <footer>
