@@ -36,16 +36,16 @@
 <body onload="slider()">
     <div class="banner">
         <div class="slider">
-            <img src="/web-multimedia-dev/media/slides/slide1.jpg">
+            <img src="/web-multimedia-dev/media/slides/slide5.jpg" id="slideImg" alt="#">
         </div>
     </div>
 <script>
     var slideImg = document.getElementById("slideImg");
     var images = new Array(
-        "/media/slides/slide1.jpg" , 
-        "/media/slides/slide2.jpg" ,
-        "/media/slides/slide3.jpg" , 
-        "/media/slides/slide4.jpg"
+        "/web-multimedia-dev/media/slides/slide5.jpg", 
+        "/web-multimedia-dev/media/slides/slide2.jpg",
+        "/web-multimedia-dev/media/slides/slide3.jpg", 
+        "/web-multimedia-dev/media/slides/slide4.jpg",
     );
 
     var len = images.length;
@@ -57,7 +57,7 @@
         }
         slideImg.src = images[i]
         i++;
-        setTimeout("slider()" , 4000)
+        setTimeout("slider()" , 4000);
 
     }
 </script>
