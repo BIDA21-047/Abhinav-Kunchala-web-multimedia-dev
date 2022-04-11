@@ -155,7 +155,27 @@ header .search .fa-search{
     position: relative;
 }
 /*Now showing section*/
-
+ /* Designing all grid */
+ .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(0, 0, 0);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding: 5px;
+}
+  
+/* Designing all grid-items */
+.grid-item {
+    background-color: rgba(25, 139, 92, 0.8);
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    padding-left: 5px;
+}
 /*Footer section*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 body{
