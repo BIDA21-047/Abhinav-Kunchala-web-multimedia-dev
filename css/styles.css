@@ -301,22 +301,7 @@ header .search .fa-search{
     .container1 .movieBox {
         height: 450px;
     }
-}
-}
-
-/* Grid Section 2*/
-.cinema-features {
-    font-weight: bold;
-    font-size: 25px;
-    color:#ffffff;
-    display: flex;
-    position: static;
-    background-color: #000000;
-    padding-left: 42%;
-    padding-top: 20px; 
-    padding-bottom: 20px; }
-
-    
+}}
  
 /*Footer section*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
