@@ -51,7 +51,7 @@ header .navigation li a {
 }
 
 header .navigation li a:hover{
-    color: yellow;
+    color: turquoise;
 }
 
 header .search{
@@ -437,7 +437,7 @@ ul{
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-	color: #ffffff;
+	color: turquoise;
 	padding-left: 8px;
 }
 .footer-col .social-links a{
@@ -453,7 +453,7 @@ ul{
 	transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover{
-	color: #24262b;
+	color: turquoise;
 	background-color: #ffffff;
 }
 
