@@ -134,8 +134,15 @@ header .search .fa-search{
     left: 0;
     height: calc(100vh - 50px);
     width: 100%;
+    
+
   }
 
+li a{
+    color:white;
+    font-size: 15px;
+    text-decoration: none;
+}
 @media only screen and (max-width:900px)
     {
     
