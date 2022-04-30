@@ -17,10 +17,11 @@
 </head>
 
 <header> 
-    <!--Logo Section -->
+<!--Logo Section -->
 
     <a href="/html/pages/home.html" class="logo">  <img src="/web-multimedia-dev/media/images/logoV2_80x80.png"></a>
     <ul class="navigation">
+<!-- Full Screen Menu-->
         <li><a href="/web-multimedia-dev/page/index.html">Home</a></li>
         <li><a href="/web-multimedia-dev/page/movie_page.html">Now Showing</a></li>
         <li><a href="/web-multimedia-dev/page/categories.html">Genre</a></li>
@@ -28,11 +29,12 @@
         <li><a href="/web-multimedia-dev/page/contacts.html">Contacts</a></li>
         <li><a href="/web-multimedia-dev/page/feedback.html">Feedback</a></li>
     </ul>
+<!-- Search Bar-->
     <div class="search">
         <input type="text" placeholder="search">
         <i class="fa-solid fa-search"></i>
-        
     </div>
+
 <!--Mobile Menu-->
     <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
         <div class="bar1"></div>
@@ -50,6 +52,7 @@
       </div>
 </header>
 
+<!--Remember to move this to an external .js file (java.js)-->
 <script>
     function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
@@ -95,44 +98,41 @@
 
     }
 </script>
-    <!-- Creating grids -->
+
+<!-- Now Showing Section -->
     <div class="nowShowing">
         NOW SHOWING
     </div>
+
+<!-- Movie Box Containers -->
     <div class="container1">
         <div class="movieBox">
-            
             <img src = "/web-multimedia-dev/media/images/posters/movie1.jpg">
+<!-- Radio Buttons for Show Times and Watch Trailer -->
             <div class="button">
                 <div type="button" class="btn-1">Show Times</div>
                 <div type="button" class="btn-2">Watch Tralier</div>
             </div>
-
         </div>
         
 
         <div class="movieBox">
-            
             <img src = "/web-multimedia-dev/media/images/posters/movie2.jpg">
             <div class="button">
                 <div type="button" class="btn-1">Show Times</div>
                 <div type="button" class="btn-2">Watch Tralier</div>
             </div>
-
         </div>
 
         <div class="movieBox">
-            
             <img src = "/web-multimedia-dev/media/images/posters/movie3.jpg">
             <div class="button">
                 <div type="button" class="btn-1">Show Times</div>
                 <div type="button" class="btn-2">Watch Tralier</div>
             </div>
-
         </div>
 
         <div class="movieBox">
-            
             <img src = "/web-multimedia-dev/media/images/posters/movie4.jpg">
             <div class="button">
                 <div type="button" class="btn-1">Show Times</div>
@@ -141,7 +141,6 @@
 
         </div>
         <div class="movieBox">
-           
             <img src = "/web-multimedia-dev/media/images/posters/movie5.jpg">
             <div class="button">
                 <div type="button" class="btn-1">Show Times</div>
@@ -156,19 +155,18 @@
                 <div type="button" class="btn-1">Show Times</div>
                 <div type="button" class="btn-2">Watch Tralier</div>
             </div>
-        
-    </div>
-    
-    
+        </div>
 
-</div>
-
+    </div> 
+  <!--End of Movie Boxes Section--> 
+    
+<!--Cinema Features Section-->
 <div class="cinemaFeatures">
     CINEMA FEATURES
 </div>
 
+<!-- Conferencing Features Box-->
 <div class="box1"> 
-    
     <div class="conferencing">
        <div class="conferencingBookingsAvailable ">
         CONFERENCING & EVENTS
@@ -177,9 +175,19 @@
         Want to really impress? Talk to us about pre release screenings - and let your company host a 
         movie the night before it opens officially. Perfect for creating a VIP experience for everyone.
         <div class="conImg">
+        <div class="pic1">
         <img src="/web-multimedia-dev/media/images/features/conference1.jpg">
+        <div class="pic1_txt">Spacing Capacity for Over 200 people</div>
+        </div>
+
+        <div class = "pic1">
         <img src="/web-multimedia-dev/media/images/features/conference2.jpg">
+        <div class="pic1_txt"> Catering Services and Gourmet Dishes</div>
+        </div>
+        <div class = "pic1">
         <img src="/web-multimedia-dev/media/images/features/conference3.jpg">
+        <div class="pic1_txt">High Definition Conference Projectors</div>
+        </div>
         </div>
     </div>
   
@@ -190,58 +198,46 @@
            Motion Works theatres incorporate not only reclining chairs but also gourmet snacks, 
            reserved seating, in-seat service and other upscale amenities such as valet parking.
            <div class="conImg">
+            <div class="pic1">
             <img src="/web-multimedia-dev/media/images/features/seats.jpg">
-            <img src="/web-multimedia-dev/media/images/features/3d.jpg">
-            <img class src="/web-multimedia-dev/media/images/features/food.jpg">
+            <div class="pic1_txt">Luxury Theater Seating</div>
+            </div>
+            <div class="pic1">
+            <img src="/web-multimedia-dev/media/images/features/parkingSP.jpg">
+            <div class="pic1_txt">Free Valet Parking</div>
+            </div>
+            <div class="pic1">
+            <img src="/web-multimedia-dev/media/images/features/food.jpg">
+            <div class="pic1_txt">Popcorn, Soda & Snacks</div>
+            </div>
+        
             </div>
         </div>
-   
-    <div class="conferencing">
-        <div class="conferencingBookingsAvailable ">Something Big has Landed in Gaborone</div>
 
-           The largest CinemaScope screen in southern africa is in Gaborone motion works. The screen is over 
-           94 feet wide with laser 4K projection, Dolby Atmos 64 Channel immersive sound and more!
-           <div class="conImg">
-                <div class="image-grid">
-                    <div class="image">
-                    <img class="image__img" src="/web-multimedia-dev/media/images/features/cinemascreen1.jpg">
-                    <div class="image__overlay ">
-                    <div class="image__title">Largest Screen</div>
-                    <div class="image__description">To the home of the BIGGEST Movie Theatre Screen in 
-                    Southern Africa</div>
-            </div>
-           </div>
-        </div>
+      
+        <div class="conferencing">
+            <div class="conferencingBookingsAvailable ">
+                Something Big has Landed in Gaborone
+               </div>
+               The largest CinemaScope screen in southern africa is in Gaborone motion works. The screen is over 
+                94 feet wide with laser 4K projection, Dolby Atmos 64 Channel immersive sound!
+               <div class="conImg">
+                <div class="pic1">
+                    <img src="/web-multimedia-dev/media/images/features/imax.jpg">
+                    <div class="pic1_txt">4K IMAX Movie Screens</div>
+                </div>
+                <div class="pic1">
+                    <img src="/web-multimedia-dev/media/images/features/dolby3.jpg">
+                    <div class="pic1_txt">Immersive Dolby Sound</div>
+                </div>
+                <div class="pic1">
+                    <img src="/web-multimedia-dev/media/images/features/ezgif.com-gif-maker.jpg">
+                    <div class="pic1_txt">Breathtaking 3D Exprience</div>
+                </div>
            
-        <div class="conImg">
-            <div class="image-grid">
-            <div class="image">
-             <img class="image__img" src="/web-multimedia-dev/media/images/features/dolbyatmos.jpg">
-             <div class="image__overlay ">
-                 <div class="image__title">
-                     Dolby Atmos 
-                 </div>
-                 <div class="image__description">
-                   We use Dolby Atmos  Sound, Visual, & Display Technology
-                 </div>
-             </div>
+                </div>
             </div>
-         </div>
-       <div class="conImg">
-                <div class="image-grid">
-                <div class="image">
-             <img class="image__img" src="/web-multimedia-dev/media/images/features/dolbyatmos.jpg">
-             <div class="image__overlay ">
-                 <div class="image__title">
-                     Amenities
-                 </div>
-                 <div class="image__description">
-                     Here we offer extravagant amenities
-                 </div>
-             </div>
-            </div>
-         </div>
-    </div>
+
 </div>
 
 </div>
