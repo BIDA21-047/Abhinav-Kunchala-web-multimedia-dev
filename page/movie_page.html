@@ -18,52 +18,71 @@
 
 
 <header> 
-    <ul class="navigation">
-        <li><a href="/web-multimedia-dev/page/index.html">Home</a></li>
-        <li><a href="/web-multimedia-dev/page/movie_page.html">Now Showing</a></li>
-        <li><a href="/web-multimedia-dev/page/categories.html">Genre</a></li>
-        <li><a href="/web-multimedia-dev/page/upcoming.html">Upcoming</a></li>
-        <li><a href="/web-multimedia-dev/page/contacts.html">Contacts</a></li>
-        <li><a href="/web-multimedia-dev/page/feedback.html">Feedback</a></li>
-    </ul>
-    <div class="search">
-        <input type="text" placeholder="search">
-        <i class="fa-solid fa-search"></i>
-        
-    </div>
-</header>
+    <!--Logo Section -->
+    
+        <a href="/html/pages/home.html" class="logo">  <img src="/web-multimedia-dev/media/images/logoV2_80x80.png"></a>
+        <ul class="navigation">
+    <!-- Full Screen Menu-->
+            <li><a href="/web-multimedia-dev/page/index.html">Home</a></li>
+            <li><a href="/web-multimedia-dev/page/movie_page.html">Now Showing</a></li>
+            <li><a href="/web-multimedia-dev/page/categories.html">Genre</a></li>
+            <li><a href="/web-multimedia-dev/page/upcoming.html">Upcoming</a></li>
+            <li><a href="/web-multimedia-dev/page/contacts.html">Contacts</a></li>
+            <li><a href="/web-multimedia-dev/page/feedback.html">Feedback</a></li>
+        </ul>
+    <!-- Search Bar-->
+        <div class="search">
+            <input type="text" placeholder="search">
+            <i class="fa-solid fa-search"></i>
+        </div>
+    
+    <!--Mobile Menu-->
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+    
+            <li><a href="/web-multimedia-dev/page/index.html">Home</a></li>
+            <li><a href="/web-multimedia-dev/page/movie_page.html">Now Showing</a></li>
+            <li><a href="/web-multimedia-dev/page/categories.html">Genre</a></li>
+            <li><a href="/web-multimedia-dev/page/upcoming.html">Upcoming</a></li>
+            <li><a href="/web-multimedia-dev/page/contacts.html">Contacts</a></li>
+            <li><a href="/web-multimedia-dev/page/feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+    </header>
+<!--Remember to move this to an external .js file (java.js)-->
+<script>
+    function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+</script>
 
 <body>
-<div class="container">
-    <div class="movie_banner">
-        <div class="banner_button"> By Title</div>
-        <div class="banner_button"> Print Calender</div>
-        <div class="banner_button"> Newest First</div>
+<div class="movies_container">
+    <div class="movies_banner">
+        <div class="banner_btn">By Day <i class="fa-solid fa-filter"></i></div>
+        <div class="banner_btn">By Title  <i class="fa-solid fa-filter"></i></div>
+        <div class="banner_btn">By Rating  <i class="fa-solid fa-filter"></i></div>
     </div>
-    <div class="movie">
-        <img  src="#">
+    <div class="movies_grid">
+        <div class="movies_img">
+            <img src="/web-multimedia-dev/media/images/posters/movie1_200x300.jpg" alt="">
+        </div>
+            <div class="movies_info"> 
+            <h1>MORBIUS</h1>
+            <div class="movies_trailer">Movie| Trailer</div>
+            <h2>104 mins | Rated PG13</h2>
+            <p>Monday May 30                   10:00 AM            3:30 PM       8:45 PM</p>
+            <p>Tuesday May 31                  10:00 AM              3:30 PM     8:45 PM</p>
+            <p>Wednesday June 01               10:00 AM              3:30 PM     8:45 PM</p>
+        </div>
     </div>
-    <div class="movie_info">
-        <div class="movie_title">
-            The Batman
-        </div>
-        <div class="rating_duration"> 
-            175 mins | Rated PG-13
-        </div>
-        <div class="trailer_button">
-            Movie Trailer
-        </div>
-        <div class="movie_showtimes">
-            <div class="movie_date"> Monday, May 02</div>
-            <div class="movie_times"> 10:00 AM      3:30        8:45AM</div>
-            <div class="movie_date"> Tuesday, May 03</div>
-            <div class="movie_times"> 10:00 AM      3:30        8:45AM</div>
-            <div class="movie_date"> Wednesday, May 04</div>
-            <div class="movie_times"> 10:00 AM      3:30        8:45AM</div>
-        </div>
 
-    </div>
 </div>
+
+
 </body>
 
 <footer class="footer">
