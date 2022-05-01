@@ -460,6 +460,10 @@ li a{
     padding-left: 20px;
 }
 
+.spacing{
+    word-spacing: 60px;
+}
+
 .movies_info .movies_trailer{
    
     border-radius: 25px;
