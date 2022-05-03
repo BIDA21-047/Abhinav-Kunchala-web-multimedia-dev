@@ -1,13 +1,13 @@
 /* Web and Mobile Responsive Header Section*/
-@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Public+Sans:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 
 *
 {
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inspiration', cursive;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Quicksand', cursive;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /*Header Section*/
@@ -42,8 +42,7 @@ header .navigation li{
     margin: 0 10px;
     padding: 5px;
     font-weight: 500;
-    border: 2px solid turquoise;
-    border-radius: 10px;
+    
 }
 
 header .navigation li a {
@@ -53,9 +52,19 @@ header .navigation li a {
     letter-spacing: 1px;
 
 }
+ .navigation .point {
+    border: 2px solid turquoise;
+    border-radius: 10px;
+    text-decoration: bold;
+    color: red;
+
+}
 
 header .navigation li a:hover{
     color: turquoise;
+    border: 2px solid turquoise;
+    border-radius: 10px;
+    
 }
 
 header .search{
@@ -410,7 +419,7 @@ li a{
     
     position: relative;
     max-width: 100%;
-    height: 450vh;
+    height: 420vh;
     background-color: black;
     padding: 20px;
     padding-top: 115px;
@@ -449,6 +458,7 @@ li a{
 
 .movies_grid {
     border: 2px solid turquoise;
+    border-radius: 25px;
     width: 100%;
     height: 320px;
     display: grid;
@@ -497,45 +507,6 @@ li a{
     word-spacing: 20px;
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Footer section*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
