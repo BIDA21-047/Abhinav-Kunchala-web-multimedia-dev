@@ -486,7 +486,7 @@ li a{
     width: 150px;
     font-weight: bolder;
     background-color: turquoise;
-
+    
     padding-left:15px;
     margin-bottom: 10px;
 }
@@ -504,6 +504,14 @@ li a{
 }
 
 
+.movie_ratings h2{
+    padding-top: 25px;
+    
+}
+.movie_times p{
+    padding-top: 20px;
+
+}
 
 /*Footer section*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
