@@ -39,7 +39,7 @@ header .navigation {
 }
 header .navigation li{
     list-style: none;
-    margin: 0 10px;
+    margin: 0 3px;
     padding: 5px;
     font-weight: 500;
     
@@ -50,6 +50,8 @@ header .navigation li a {
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
 
 }
  .navigation .point {
@@ -57,6 +59,7 @@ header .navigation li a {
     border-radius: 10px;
     text-decoration: bold;
     color: red;
+   
 
 }
 
@@ -247,7 +250,7 @@ li a{
     position: relative;
 }
 
-/*Now showing section*/
+/*Now showing section on Movies Page*/
 .nowShowing {
     font-weight: bold;
     font-size: 25px;
@@ -413,20 +416,36 @@ li a{
 
 
 /* Movies Page CSS */
+@media only screen and (max-width:800px) {
+    .movies_grid {
+       max-width: 100%;
+    }
+    
+       .movies_info {
+           margin-left:20px;
+    }
+    
+        .movies_info h1{
+        font-size: 25px;
+    }
+    
+    
+   
 
+ 
+
+    
+}
 /* Large outer container */
 .movies_container{
     
     position: relative;
     max-width: 100%;
-    height: 420vh;
+    height: 425vh;
     background-color: black;
     padding: 20px;
     padding-top: 115px;
     color: white;
-
-    
-     
 }
 
 .movies_banner {
@@ -483,12 +502,12 @@ li a{
 .movies_info .movies_trailer{
    
     border-radius: 25px;
-    width: 150px;
+    width: 125px;
     font-weight: bolder;
     background-color: turquoise;
-    
     padding-left:15px;
     margin-bottom: 10px;
+    
 }
 
 .movies_info h1{
@@ -502,16 +521,129 @@ li a{
     
 
 }
+.movies_trailer{
+    margin-top:20px;
 
+}
+.movies_trailer:hover{
+    background: rgb(0, 0, 0);
+    border: 1px solid white;
+    cursor: pointer;
+ 
+}
 
 .movie_ratings h2{
-    padding-top: 25px;
+    margin-top: 25px;
     
 }
 .movie_times p{
-    padding-top: 20px;
+    margin-top: 18px;
 
 }
+
+
+/* Upcoming Page CSS */
+@media only screen and (max-width:800px) {
+
+}
+
+
+.upcoming_container{
+    position: relative;
+    max-width: 100%;
+    height: 425vh;
+    background-color: black;
+    padding: 20px;
+    padding-top: 115px;
+    color: white;
+}
+
+.upcoming_banner{
+        position:static;
+        background-color: black;
+        height: 50px;
+        border: 1px solid white;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+}
+
+.upcoming_banner .banner_btn{
+    display: inline-block;
+    color: white;
+    width: 120px;
+    margin-right: 20px;
+    padding-right: 10px;
+}
+
+.upcoming_banner .banner_btn .fa-filter{
+    position: static;
+    color: white;
+}
+
+.upcoming_grid {
+    border: 2px solid turquoise;
+    border-radius: 25px;
+    width: 100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 7px;
+    padding-left:10px;
+    margin: 30px;
+    margin-right: 50px;
+    margin-left: 5px;
+  
+}
+
+.upcoming_grid .upcoming_img img{
+    max-height: 300px;
+    padding-left: 20px;
+}
+
+.upcoming_info .upcoming_trailer{
+    border-radius: 25px;
+    width: 125px;
+    font-weight: bolder;
+    background-color: turquoise;
+    padding-left:15px;
+    margin-bottom: 10px;
+    
+}
+
+.upcoming_trailer{
+    margin-top:20px;
+}
+
+.upcoming_trailer:hover{
+    background: rgb(0, 0, 0);
+    border: 1px solid white;
+    cursor: pointer;
+ 
+}
+.upcoming_date{
+    margin-top: 10px;
+}
+.movie_date h2{
+    margin-top: 20px;
+    text-decoration: bolder;
+    color:turquoise;
+    font-size: 20px;
+    
+}
+.upcoming_text{
+    margin-top:20px;
+}
+
+.upcoming_rating{
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+
+
+
 
 /*Footer section*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');

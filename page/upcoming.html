@@ -18,24 +18,75 @@
 
 
 <header> 
+<!--Logo Section -->
+
+    <a href="/html/pages/home.html" class="logo">  <img src="/web-multimedia-dev/media/images/logoV2_80x80.png"></a>
     <ul class="navigation">
-        <li><a href="/web-multimedia-dev/page/index.html">Home</a></li>
-        <li><a href="/web-multimedia-dev/page/movie_page.html">Now Showing</a></li>
-        <li><a href="/web-multimedia-dev/page/categories.html">Genre</a></li>
-        <li><a class="point"href="/web-multimedia-dev/page/upcoming.html">Upcoming</a></li>
-        <li><a href="/web-multimedia-dev/page/contacts.html">Contacts</a></li>
-        <li><a href="/web-multimedia-dev/page/feedback.html">Feedback</a></li>
+<!-- Full Screen Menu-->
+        <li><a  href="/web-multimedia-dev/page/index.html">Home</a></li>
+        <li><a  href="/web-multimedia-dev/page/movie_page.html">Now Showing</a></li>
+        <li><a  href="/web-multimedia-dev/page/categories.html">Genre</a></li>
+        <li><a  class="point" href="/web-multimedia-dev/page/upcoming.html">Upcoming</a></li>
+        <li><a  href="/web-multimedia-dev/page/contacts.html">Contacts</a></li>
+        <li><a  href="/web-multimedia-dev/page/feedback.html">Feedback</a></li>
     </ul>
+<!-- Search Bar-->
     <div class="search">
         <input type="text" placeholder="search">
         <i class="fa-solid fa-search"></i>
-        
     </div>
+
+<!--Mobile Menu-->
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+
+        <li><a href="/web-multimedia-dev/page/index.html">Home</a></li>
+        <li><a href="/web-multimedia-dev/page/movie_page.html">Now Showing</a></li>
+        <li><a href="/web-multimedia-dev/page/categories.html">Genre</a></li>
+        <li><a href="/web-multimedia-dev/page/upcoming.html">Upcoming</a></li>
+        <li><a href="/web-multimedia-dev/page/contacts.html">Contacts</a></li>
+        <li><a href="/web-multimedia-dev/page/feedback.html">Feedback</a></li>
+        </ul>
+      </div>
 </header>
 
 
-<body>
 
+
+<body>
+<div class="upcoming_container">
+   <div class="upcoming_banner">
+    <div class="banner_btn">By Day <i class="fa-solid fa-filter"></i></div>
+    <div class="banner_btn">By Title  <i class="fa-solid fa-filter"></i></div>
+    <div class="banner_btn">By Rating  <i class="fa-solid fa-filter"></i></div>
+   </div>
+   <div class="upcoming_grid">
+       <div class="upcoming_img">
+           <img src="/web-multimedia-dev/media/images/posters/movie9.jpg">
+       </div>
+       <div class="upcoming_info"> 
+        <h1>THE BLACK PHONE </h1>
+        <div class="upcoming_date">
+            <i class='fa fa-clock-o'></i> &ensp;Starts in 4 days </div>
+        <div class="upcoming_text">   
+            <p>  Finney Shaw is a shy but clever 13-year-old boy who's being held in a soundproof basement by a sadistic, masked killer. When a disconnected phone on the wall starts to ring, he soon discovers that he can hear the voices of the murderer's previous victims  and they are dead set on making sure that what happened to them doesn't happen to Finney.  </p>                              
+       </div>
+        
+        <div class="upcoming_trailer" href="https://google.com >Movie">Movie| Trailer</div>
+        
+        <div class="movie_date">
+        <h2>Release Date: Fri 3rd June 2022</h2></div>
+        <div class="upcoming_rating">
+            <h2> 102 mins | Rated PG16</h2>
+        </div>
+     </div>
+    </div>
+   </div>
+
+</div>
 </body>
 
 <footer class="footer">
