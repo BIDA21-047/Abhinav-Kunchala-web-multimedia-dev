@@ -19,7 +19,7 @@
 <header> 
   <!--Logo Section -->
   
-      <a href="/html/pages/home.html" class="logo">  <img src="/web-multimedia-dev/media/images/logoV2_80x80.png"></a>
+      <a href="/web-multimedia-dev/page/index.html" class="logo">  <img src="/web-multimedia-dev/media/images/logoV2_80x80.png"></a>
       <ul class="navigation">
   <!-- Full Screen Menu-->
           <li><a  href="/web-multimedia-dev/page/index.html">Home</a></li>
@@ -44,7 +44,7 @@
   
           <li><a href="/web-multimedia-dev/page/index.html">Home</a></li>
           <li><a href="/web-multimedia-dev/page/movie_page.html">Now Showing</a></li>
-          <li><a href="/web-multimedia-dev/page/categories.html">Genre</a></li>
+          <li><a href="/web-multimedia-dev/page/genre.html">Genre</a></li>
           <li><a href="/web-multimedia-dev/page/upcoming.html">Upcoming</a></li>
           <li><a href="/web-multimedia-dev/page/contacts.html">Contacts</a></li>
           <li><a href="/web-multimedia-dev/page/feedback.html">Feedback</a></li>
@@ -88,54 +88,8 @@
     <div id="status"></div>
   </section>
 
-  <script>
-    window.addEventListener("DOMContentLoaded", function () {
-  // get the form elements defined in your form HTML above
-
-  var form = document.getElementById("my-form");
-  // var button = document.getElementById("my-form-button");
-  var status = document.getElementById("status");
-
-  // Success and Error functions for after the form is submitted
-
-  function success() {
-    form.reset();
-    status.classList.add("success");
-    status.innerHTML = "Thanks!";
-  }
-
-  function error() {
-    status.classList.add("error");
-    status.innerHTML = "Oops! There was a problem.";
-  }
-
-  // handle the form submission event
-
-  form.addEventListener("submit", function (ev) {
-    ev.preventDefault();
-    var data = new FormData(form);
-    ajax(form.method, form.action, data, success, error);
-  });
-});
-
-// helper function for sending an AJAX request
-
-function ajax(method, url, data, success, error) {
-  var xhr = new XMLHttpRequest();
-  xhr.open(method, url);
-  xhr.setRequestHeader("Accept", "application/json");
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState !== XMLHttpRequest.DONE) return;
-    if (xhr.status === 200) {
-      success(xhr.response, xhr.responseType);
-    } else {
-      error(xhr.status, xhr.response, xhr.responseType);
-    }
-  };
-  xhr.send(data);
-}
-  </script>
-
+ 
+<script src="/web-multimedia-dev/js/java.js"></script>
 </body>
 
 <footer class="footer">
@@ -184,7 +138,7 @@ function ajax(method, url, data, success, error) {
           </div>
       </div>
   </div>
-  <script src="java.js"></script>
+
 </footer>
 
     
