@@ -12,29 +12,55 @@
     <!--CSS Links-->
     <link rel="stylesheet" href="/web-multimedia-dev/css/styles.css">
     <title> 
-        Sci-Fi
+        Adventure
     </title>
 </head>
 
-
 <header> 
-    <ul class="navigation">
-        <li><a href="/web-multimedia-dev/page/index.html">Home</a></li>
-        <li><a href="/web-multimedia-dev/page/movie_page.html">Now Showing</a></li>
-        <li><a href="/web-multimedia-dev/page/genre.html">Genre</a></li>
-        <li><a href="/web-multimedia-dev/page/upcoming.html">Upcoming</a></li>
-        <li><a href="/web-multimedia-dev/page/contacts.html">Contacts</a></li>
-        <li><a href="/web-multimedia-dev/page/feedback.html">Feedback</a></li>
-    </ul>
-    <div class="search">
-        <input type="text" placeholder="search">
-        <i class="fa-solid fa-search"></i>
-        
-    </div>
-</header>
+    <!--Logo Section -->
+    
+        <a href="/web-multimedia-dev/page/index.html" class="logo">  <img src="/web-multimedia-dev/media/images/logoV2_80x80.png"></a>
+        <ul class="navigation">
+    <!-- Full Screen Menu-->
+            <li><a  href="/web-multimedia-dev/page/index.html">Home</a></li>
+            <li><a  href="/web-multimedia-dev/page/movie_page.html">Now Showing</a></li>
+            <li><a href="/web-multimedia-dev/page/genre.html">Genre</a></li>
+            <li><a class="point" href="/web-multimedia-dev/page/adventure.html">Adventure</a></li>
+            <li><a href="/web-multimedia-dev/page/upcoming.html">Upcoming</a></li>
+            <li><a href="/web-multimedia-dev/page/contacts.html">Contacts</a></li>
+            <li><a href="/web-multimedia-dev/page/feedback.html">Feedback</a></li>
+        </ul>
+    <!-- Search Bar-->
+        <div class="search">
+            <input type="text" placeholder="search">
+            <i class="fa-solid fa-search"></i>
+        </div>
+    
+    <!--Mobile Menu-->
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+    
+            <li><a href="/web-multimedia-dev/page/index.html">Home</a></li>
+            <li><a href="/web-multimedia-dev/page/movie_page.html">Now Showing</a></li>
+            <li><a href="/web-multimedia-dev/page/genre.html">Genre</a></li>
+            <li><a href="/web-multimedia-dev/page/upcoming.html">Upcoming</a></li>
+            <li><a href="/web-multimedia-dev/page/contacts.html">Contacts</a></li>
+            <li><a href="/web-multimedia-dev/page/feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+    </header>
 
 <body>
 
+
+
+
+
+    
+    <script src="/web-multimedia-dev/js/java.js"></script>
 </body>
 
 <footer class="footer">
@@ -89,4 +115,4 @@
 
 
 
-</html>  
+</html>    
