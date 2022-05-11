@@ -39,7 +39,7 @@ var status = document.getElementById("status");
 function success() {
 form.reset();
 status.classList.add("success");
-status.innerHTML = "Thanks!";
+status.innerHTML = "Thanks for your feedback, we will get back to you!";
 }
 
 function error() {
