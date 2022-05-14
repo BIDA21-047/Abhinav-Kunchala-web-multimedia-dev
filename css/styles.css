@@ -449,13 +449,6 @@ li a{
         .movies_info h1{
         font-size: 25px;
     }
-    
-    
-   
-
- 
-
-    
 }
 
 /* Large outer container */
@@ -546,6 +539,18 @@ li a{
 .movies_trailer{
     margin-top:20px;
 
+    
+}
+
+.movies_trailer a{
+  width: 317px;
+  border-radius: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+ 
 }
 .movies_trailer:hover{
     background: rgb(0, 0, 0);
