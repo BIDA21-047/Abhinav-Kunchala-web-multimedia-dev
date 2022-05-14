@@ -543,11 +543,14 @@ li a{
 }
 
 .movies_trailer a{
+ 
   border-radius: 25px;
   cursor: pointer;
   width: 100px;
- color:white;
+ color: white;
   text-decoration: none;
+  
+ 
 }
 .movies_trailer:hover{
     background: rgb(0, 0, 0);
