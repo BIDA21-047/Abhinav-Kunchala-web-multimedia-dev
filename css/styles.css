@@ -543,21 +543,20 @@ li a{
 }
 
 .movies_trailer a{
- 
-  border-radius: 25px;
-  cursor: pointer;
-  width: 100px;
- color: white;
+  width: 317px;
+  border-radius: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: bolder;
   text-decoration: none;
-  
+  color: white;
  
 }
 .movies_trailer:hover{
     background: rgb(0, 0, 0);
     border: 1px solid white;
     cursor: pointer;
-    color:white
-  
+ 
 }
 
 .movie_ratings h2{
@@ -581,7 +580,7 @@ li a{
         color: #ffffff;
         padding: 10px;
         margin-top: 8%;
-        background-image: url(/web-multimedia-dev/media/images/bkimgs/genre_custom.png);
+        background-image: url(/web-multimedia-dev/media/images/bkimgs/darkcinema2.jpg);
         background-position: center;
         background-size: 80%;
      
@@ -590,9 +589,11 @@ li a{
 
 .genre_box {
  
-  border: 1px solid turquoise;
-  margin: 5%;
+  
+  padding-left: 5px;
   border-radius: 25px;
+  max-width: 400px;
+  height: 450px;
 
 }
 
@@ -602,10 +603,50 @@ li a{
   border-radius: 25px;
 }
 
-.genre_box img:hover{
-  cursor: pointer;
-  animation:ease-out ;
+.genre_text1 {
+  position: absolute;
+  top: 42%;
+  left: 10%;
+  font-size: 75px;
+  font-weight: 900;
 }
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: relative;
+  max-width: 100%;
+  border-radius: 25px;
+  
+}
+
+/* Add some content at the bottom of the video/page */
+.genre_content {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px;
+  border: none;
+  background: turquoise;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
 
 /* Upcoming Page CSS */
 @media only screen and (max-width:800px) {
