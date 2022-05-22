@@ -267,7 +267,7 @@ li a{
 .container1{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 500px;
+        grid-auto-rows: 550px;
         column-gap: 20px;
         row-gap: 40px;
         background-color: #000000;
@@ -278,7 +278,14 @@ li a{
         .container1 .movieBox {
             
             border-radius: 25px;
-            background-color: rgba(64, 224, 208, 0.3);
+            border: 2px solid turquoise;
+            cursor:pointer;
+        }
+
+        .container1 .movieBox:hover {
+          background-color: black;
+          border: 2px solid white;
+          background-image: url(/web-multimedia-dev/media/images/bkimgs/);
         }
 
         .container1 .movieBox img{
@@ -292,47 +299,65 @@ li a{
             display: grid;
             column-gap: 0px;
             grid-template-columns: 1fr 1fr ;
-            padding-left: 15%; 
-            padding-right: 15%;
+            
+            padding-left: 17%; 
+            padding-right: 20%;
             text-align: center;
             transition: background 0.5s;
+            
             
         }
         
         .btn-1 {
-            border: 2px solid turquoise;
+            padding: 5px;
             border-radius: 25px;
             cursor: pointer;
             width: 120px;
             background-color:turquoise;
-           
+            background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+                    
             
         }
+       
+        
         .btn-1 a {
           text-decoration: none;
           color: white;
         }
         
         .btn-2  a{
-            border: 2px solid turquoise;
+            padding: 5px;
             border-radius: 25px;
+
             cursor: pointer;
             width: 100px;
             color: #fff;
             text-decoration: none;
+            background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+            
             
         }
         
         .btn-1:hover  {
             background: transparent;
-            border: 2px solid white;
+            
             
           
         }
         
         .btn-2 a:hover {
             background: turquoise;
-            border: 2px solid white;
+            
            
         }
       
@@ -453,14 +478,15 @@ li a{
 
 /* Large outer container */
 .movies_container{
-    
+
     position: relative;
     max-width: 100%;
-    height: 425vh;
+    height: 420vh;
     background-color: black;
     padding: 20px;
     padding-top: 115px;
     color: white;
+    scroll-margin:unset;
 }
 
 .movies_banner {
@@ -522,8 +548,15 @@ li a{
     background-color: turquoise;
     padding-left:-15px;
     margin-bottom: 10px;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
     
 }
+
 
 .movies_info h1{
     margin-bottom: -5px;
@@ -543,11 +576,9 @@ li a{
 }
 
 .movies_trailer a{
-  width: 317px;
+  
   border-radius: 10px;
-  padding-right: 20px;
-  padding-left: 0px;
-  margin-right: 10px;
+  
 
   font-weight: bolder;
   text-decoration: none;
@@ -591,13 +622,26 @@ li a{
 }
 
 .genre_box {
- 
   
   padding-left: 5px;
   border-radius: 25px;
   max-width: 400px;
   height: 450px;
+}
 
+.genre_box:hover{
+  border:1px solid white;
+  background-color: rgba(48, 213, 200, .2);
+  background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.genre_box:active{
+  background-color: rgba(48, 213, 200, .2);
 }
 
 .genre_box img{
@@ -729,6 +773,8 @@ li a{
 }
 
 
+
+
 .upcoming_container{
     position: relative;
     max-width: 100%;
@@ -801,7 +847,7 @@ li a{
 
 .upcoming_grid .upcoming_trailer {
     margin-top:20px;
-    border: 2px solid turquoise;
+   
     border-radius: 25px;
     background-color: turquoise;
     padding: 5px;
@@ -809,6 +855,12 @@ li a{
     padding-right: 30px;
     cursor: pointer;
     width: 120px;
+    background-image: linear-gradient(to top left,
+    rgba(0, 0, 0, .2),
+    rgba(0, 0, 0, .2) 30%,
+    rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
   
 }
 
