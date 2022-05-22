@@ -240,6 +240,7 @@ li a{
 .content h1 {
     font-size: 60px;
     position: relative;
+    padding-top: 10%;
     
 }
 
@@ -250,6 +251,27 @@ li a{
     font-size: 25px;
     position: relative;
 }
+
+@media only screen and (max-width:800px){
+  .banner {
+    height: 80vh;
+  }
+  .content h1{
+    font-size: 40px;
+    }
+
+  .nowShowing{
+   margin-left: -10%;
+  }
+
+
+
+
+
+  }
+  
+
+
 
 /*Now showing section on Movies Page*/
 .nowShowing {
@@ -299,13 +321,11 @@ li a{
             display: grid;
             column-gap: 0px;
             grid-template-columns: 1fr 1fr ;
-            
-            padding-left: 17%; 
+            margin-left: 35px;
+            padding-left: 10%; 
             padding-right: 20%;
             text-align: center;
-            transition: background 0.5s;
-            
-            
+            transition: background 0.5s; 
         }
         
         .btn-1 {
@@ -365,11 +385,15 @@ li a{
             .container1 {
                 display: flex;
                 flex-direction: column;
+                margin: 25px;
             }
             .container1 .movieBox {
                 height: 450px;
+
             }
+
             
+                       
         }
 
         .movie_location{
@@ -414,6 +438,10 @@ li a{
     font-size: 25px;
     color:rgb(0, 128, 53);
 }
+
+.box1 p{
+  padding: 20px;
+}
 .box1 img{
     max-width: 100%;
     max-height: 100%;
@@ -432,24 +460,46 @@ li a{
 
 @media only screen and (max-width:800px) {
     .cinemaFeatures {
-        padding-left: 40%;
+        padding-left: 35%;
         padding-right: 50%;
+        margin: 15px;
         font-size: 20px;
         text-align: center;
+  
+        
     }
-    .box1 {
-        display: flex;
-        flex-direction: column;
+    .box1{
+      grid-auto-rows: 870px;
     }
+    .box1 .conImg{
+      display: block;
+      padding: 25px 10px;
+      
+
+    }
+    .conImg pic1{
+      display: block;
+      padding: 25px 10px;
+      
+
+    }
+    .box1 img{
+      max-width: 86%;
+      max-height: 100%;
+      margin-left: 30px;
+      display: block;
+      
+  }
     .box1 .conferencing {
-        height: 450px;
+        height: 870px;
     }}
 
     .pic1_txt{
-        font-size: 1.2rem;
-        line-height: 2;
-        padding: 0 1rem;
-        margin: 0;
+        font-size: 20px;
+      
+        line-height: 3;
+        margin: 30px;
+        
         color: black;
         background-color: rgba(64, 224, 208, 0.5);
         margin-top:-10rem;
@@ -481,7 +531,7 @@ li a{
 
     position: relative;
     max-width: 100%;
-    height: 420vh;
+    height: 500vh;
     background-color: black;
     padding: 20px;
     padding-top: 115px;
@@ -517,10 +567,10 @@ li a{
 }
 
 .movies_grid {
-    border: 2px solid turquoise;
+  border: 1px solid turquoise;
     border-radius: 25px;
     width: 100%;
-    height: 320px;
+    height: 380px;
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding: 7px;
@@ -540,7 +590,7 @@ li a{
     word-spacing: 60px;
 }
 
-.movies_info .movies_trailer{
+.movies_info .movies_trailer {
    
     border-radius: 25px;
     width: 125px;
@@ -555,6 +605,10 @@ li a{
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
     
+}
+
+.movies_trailer .mButton{
+  margin-left: 0px;
 }
 
 
@@ -578,8 +632,6 @@ li a{
 .movies_trailer a{
   
   border-radius: 10px;
-  
-
   font-weight: bolder;
   text-decoration: none;
   color: white;
@@ -589,15 +641,67 @@ li a{
     background: rgb(0, 0, 0);
     border: 1px solid white;
     cursor: pointer;
- 
 }
 
 .movie_ratings h2{
     margin-top: 25px;
     
 }
-.movie_times p{
-    margin-top: 18px;
+
+.movies_table{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+ 
+  row-gap: 20px;
+  
+  padding-left: 5px;
+  padding-right: 50px;
+  
+}
+
+.movies_Details{
+  border-bottom: 3px solid turquoise;
+}
+
+#location{
+  color: turquoise;
+  font-size: 20px;
+}
+
+#time{
+  text-decoration: underline;
+}
+
+/* Movies Page Mobile Responsive CSS */
+@media only screen and (max-width:800px) {
+.movies_grid{
+  height: 450px;
+}
+.movies_grid .movies_img img{
+  max-height: 150px;
+  padding-left: 20px;
+
+}
+#location{
+
+  font-size: 14px;
+}
+.movie_location {
+  font-size: 15px;
+  display: block;
+  
+  position: relative;
+}
+.movies_info{
+  font-size: 15px;
+}
+
+.movies_container{
+  height: 580vh;
+}
+
+
+
 
 }
 
@@ -617,8 +721,7 @@ li a{
         background-repeat:no-repeat;
         background-position: center;
         background-size: 80%;
-     
-  
+   
 }
 
 .genre_box {
@@ -656,6 +759,18 @@ li a{
   left: 10%;
   font-size: 75px;
   font-weight: 900;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .genre_container {
+    display: grid;
+          grid-template-columns: 1fr ;
+          margin-left: 25px;
+          margin-top: 28%;
+     
+  }
+  
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -767,11 +882,6 @@ li a{
 
 
 
-/* Upcoming Page CSS */
-@media only screen and (max-width:800px) {
-
-}
-
 
 
 
@@ -875,6 +985,48 @@ li a{
 
 }
 
+/* Upcoming Page CSS */
+@media only screen and (max-width:800px) {
+  .upcoming_grid .upcoming_img img{
+    max-height: 250px;
+    width: 180px;
+}
+  .upcoming_container{
+    height: 455vh;
+  }
+
+  .upcoming_grid{
+    height:470px;
+  }
+
+  .upcoming_info h1{
+    font-size: 20px;
+  }
+
+  .upcoming_date{
+    font-size: 14px;
+  }
+
+  .upcoming_text{
+    display: block;
+    font-size: 10px;
+  }
+
+  .upcoming_grid .movie_date h2{
+    font-size: 14px;
+  }
+
+  .upcoming_grid .upcoming_rating h2{
+      font-size:14px;
+  }
+   .upcoming_grid .upcoming_trailer .mButton{
+    font-size: 14px;
+    margin-left: 0px;
+  
+  }
+
+
+}
 
 
 
@@ -883,7 +1035,7 @@ li a{
         width: 95%;
 
     }
-}
+
 
 
 .upcoming_date{
@@ -907,6 +1059,14 @@ li a{
     font-size: 12px;
     margin-left: 40px;
 }
+
+.upcoming_grid .upcoming_trailer {
+  font-size: 15px;
+  
+
+}
+}
+
 
 
 /* Embedding YouTube Video */
@@ -1239,7 +1399,7 @@ button[type="submit"]:hover {
 }
 
 /* Contact Us Page */
-.contacts_banner {
+.contacts_grid_info {
   max-width: 100%;
   height: 100vh;
   background-image: url(/web-multimedia-dev/media/images/bkimgs/contacts_banner1.jpg);
@@ -1247,8 +1407,14 @@ button[type="submit"]:hover {
   background-size: 100%;
   background-repeat:no-repeat;
   position: relative;
-  
+  top:100px;
+  color: white;
+  padding-left: 120px;
+  padding-top: 250px;
 }
+
+
+
 
 .contacts_banner h1 { 
   color: white;
@@ -1299,7 +1465,7 @@ body{
   background-color: black;
   color: white;
   background-image: url(/web-multimedia-dev/media/images/bkimgs/darkcinema2.jpg);
-  
+  position: relative;
 }
 
 .contacts_container h1{
@@ -1344,7 +1510,52 @@ body{
   margin: 10px;
   
 }
+/* Contacts Page Mobile Responsive CSS */
 
+@media only screen and (max-width:800px) {
+  .contacts_grid_info {
+    max-width: 100%;
+    padding-top: 50px;
+    font-size: 15px;
+  }
+  .mall-contacts {
+    display: flex;
+    padding-top:50px;
+    margin:-25px;
+    height: 250vh;
+  
+    
+  }
+   .contact_box img{
+    max-width: 350px;
+    max-height: 400px;
+    margin: 10px;
+    
+  }
+  .contacts_container{
+    height: 140vh;
+  }
+  .map_box iframe{
+    height: 200px;
+    width: 200px;
+  }
+  .contact_box img{
+    max-width: 250px;
+    max-height: 400px;
+    margin: -2px;
+  }
+
+  .mall_info h1{
+    font-size: 12px;
+  }
+
+  .contacts_container .mall-contacts {
+    height: 35vh;
+    margin-top:2px;
+  
+  }
+ 
+}
 
 
 
