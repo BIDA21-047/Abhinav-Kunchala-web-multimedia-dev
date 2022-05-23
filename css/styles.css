@@ -1017,11 +1017,11 @@ li a{
     width: 180px;
 }
   .upcoming_container{
-    height: 495vh;
+    height: 535vh;
   }
 
   .upcoming_grid{
-    height:519px;
+    height:570px;
     
   }
 
@@ -1529,7 +1529,6 @@ body{
   padding-top:2%;
   padding-left:80px;
   border-radius: 25px;
-
 }
 
 .contact_box img{
@@ -1545,42 +1544,55 @@ body{
     max-width: 100%;
     padding-top: 50px;
     font-size: 15px;
+    height: 350px;
+  
   }
   .mall-contacts {
     display: flex;
     padding-top:50px;
     margin:-25px;
     height: 250vh;
+  }
   
-    
-  }
-   .contact_box img{
-    max-width: 350px;
-    max-height: 400px;
-    margin: 10px;
-    
-  }
   .contacts_container{
-    height: 140vh;
+    height: 125vh;
+    max-width: 100%;
   }
   .map_box iframe{
     height: 200px;
-    width: 200px;
+    max-width: 700px;
+    margin-top: 45px;
+    margin-right: 20px;
+
   }
-  .contact_box img{
+  .mall-img img{
     max-width: 250px;
     max-height: 400px;
     margin: -2px;
+    display: inline-block;
+
   }
+.mall-contacts{
+  margin-bottom: 35px;
+}
+
 
   .mall_info h1{
-    font-size: 12px;
+    font-size: 11px;
   }
+  .mall-contacts .mall_info {
+    margin-top: -42px;
+    margin-left: -10px;
+  }
+  .google-maps{
+    width: 100%
+  }
+
+  
 
   .contacts_container .mall-contacts {
     height: 35vh;
     margin-top:2px;
-  
   }
  
 }
