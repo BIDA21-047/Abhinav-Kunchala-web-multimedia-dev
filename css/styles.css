@@ -1013,15 +1013,15 @@ li a{
 /* Upcoming Page CSS */
 @media only screen and (max-width:800px) {
   .upcoming_grid .upcoming_img img{
-    height: 500px;
+    max-height: 390px;
     width: 180px;
 }
   .upcoming_container{
-    height: 500vh;
+    height: 415vh;
   }
 
   .upcoming_grid{
-    height:520px;
+    height:420px;
     
   }
 
