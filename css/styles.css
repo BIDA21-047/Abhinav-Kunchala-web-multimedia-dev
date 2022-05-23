@@ -881,10 +881,6 @@ li a{
 
 
 
-
-
-
-
 .upcoming_container{
     position: relative;
     max-width: 100%;
@@ -926,10 +922,14 @@ li a{
 
 .upcoming_info h1{
     margin-left: 40px;
+    margin-top: 20px;
 }
 
-.upcoming_text{
+
+.upcoming_text p{
     margin-left: 40px;
+    margin-top: 20px;
+    
 }
 .upcoming_grid {
     border: 2px solid turquoise;
@@ -953,11 +953,13 @@ li a{
     width: 250px;
 }
 
-
+.upcoming_date{
+  margin-left: 40px;
+  margin-top: 20px;
+}
 
 .upcoming_grid .upcoming_trailer {
     margin-top:20px;
-   
     border-radius: 25px;
     background-color: turquoise;
     padding: 5px;
@@ -973,30 +975,54 @@ li a{
     inset -2px -2px 3px rgba(0, 0, 0, .6);
   
 }
+.upcoming_grid .upcoming_trailer .mButton{
+  font-size: 18px;
+  margin-left: 0px;
 
+}
 
 .upcoming_trailer a{
   color:white;
   text-decoration: none;
+  
 }
 
 .upcoming_trailer:hover{
   background-color:black;
+}
 
+.upcoming_rating h2{
+  font-size:20px;
+  margin-left:40px;
+  margin-top: 20px;
+}
+
+
+.upcoming_grid .movie_date h2{
+  margin-left:40px;
+}
+
+.movie_date h2{
+  margin-top: 20px;
+  text-decoration: bolder;
+  color:turquoise;
+  font-size: 20px;
+  margin-left: 40px;
 }
 
 /* Upcoming Page CSS */
 @media only screen and (max-width:800px) {
   .upcoming_grid .upcoming_img img{
-    max-height: 250px;
+    height: 500px;
     width: 180px;
 }
   .upcoming_container{
-    height: 455vh;
+    height: 500vh;
   }
 
   .upcoming_grid{
-    height:470px;
+    height:520px;
+    
   }
 
   .upcoming_info h1{
@@ -1009,20 +1035,24 @@ li a{
 
   .upcoming_text{
     display: block;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .upcoming_grid .movie_date h2{
     font-size: 14px;
+   
   }
 
   .upcoming_grid .upcoming_rating h2{
       font-size:14px;
+      margin-left:0px;
+      padding-right: 40px;
   }
+
+  
    .upcoming_grid .upcoming_trailer .mButton{
     font-size: 14px;
     margin-left: 0px;
-  
   }
 
 
@@ -1048,7 +1078,6 @@ li a{
     color:turquoise;
     font-size: 20px;
     margin-left: 40px;
-    
 }
 .upcoming_text{
     margin-top:20px;
@@ -1058,12 +1087,11 @@ li a{
     margin-top: 20px;
     font-size: 12px;
     margin-left: 40px;
+    margin-left: 40px;
 }
 
 .upcoming_grid .upcoming_trailer {
   font-size: 15px;
-  
-
 }
 }
 
