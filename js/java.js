@@ -6,10 +6,14 @@ function toggleMobileMenu(menu) {
 /* Slide Show Script */
     var slideImg = document.getElementById("slideImg");
     var images = new Array(
-        "/web-multimedia-dev/media/slides/slide5.jpg", 
-        "/web-multimedia-dev/media/slides/slide2.jpg",
-        "/web-multimedia-dev/media/slides/slide3.jpg", 
-        "/web-multimedia-dev/media/slides/slide4.jpg",
+        "/web-multimedia-dev/media/slides/slide1.png", 
+        "/web-multimedia-dev/media/slides/slide2.png",
+        "/web-multimedia-dev/media/slides/slide3.png", 
+        "/web-multimedia-dev/media/slides/slide4.png",
+        "/web-multimedia-dev/media/slides/slide5.png", 
+        "/web-multimedia-dev/media/slides/slide6.png",
+        "/web-multimedia-dev/media/slides/slide7.png", 
+        "/web-multimedia-dev/media/slides/slide8.png",
     );
 
     var len = images.length;
@@ -22,7 +26,6 @@ function toggleMobileMenu(menu) {
         slideImg.src = images[i]
         i++;
         setTimeout("slider()" , 4000);
-
     }
 
    

@@ -163,7 +163,7 @@ li a{
 
 
 }
-@media only screen and (max-width:900px)
+@media only screen and (max-width:1200px)
     {
     
     header {
@@ -189,9 +189,10 @@ li a{
 /*Slideshow section*/
     .banner{
         width: 100%;
-        height: 100vh;
+        height: 120vh;
         position: relative;
         overflow: hidden;
+        top:10px
     }
 
     .slider{
@@ -224,7 +225,7 @@ li a{
 
 .overlay{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
     position: absolute;
 }
@@ -884,7 +885,7 @@ li a{
 .upcoming_container{
     position: relative;
     max-width: 100%;
-    height: 405vh;
+    height: 420vh;
     background-color: black;
     padding: 20px;
     padding-top: 115px;
@@ -1572,11 +1573,7 @@ body{
     max-width: 100%;
   }
   .map_box iframe{
-    height: 200px;
-    max-width: 700px;
-    margin-top: 45px;
-    margin-right: 20px;
-
+   display: none;
   }
   .mall-img img{
     max-width: 250px;
