@@ -6,14 +6,14 @@ function toggleMobileMenu(menu) {
 /* Slide Show Script */
     var slideImg = document.getElementById("slideImg");
     var images = new Array(
-        "/media/slides/slide1.png", 
-        "/media/slides/slide2.png",
-        "/media/slides/slide3.png", 
-        "/media/slides/slide4.png",
-        "/media/slides/slide5.png", 
-        "/media/slides/slide6.png",
-        "/media/slides/slide7.png", 
-        "/media/slides/slide8.png",
+        "/web-multimedia-dev/media/slides/slide1.png", 
+        "/web-multimedia-dev/media/slides/slide2.png",
+        "/web-multimedia-dev/media/slides/slide3.png", 
+        "/web-multimedia-dev/media/slides/slide4.png",
+        "/web-multimedia-dev/media/slides/slide5.png", 
+        "/web-multimedia-dev/media/slides/slide6.png",
+        "/web-multimedia-dev/media/slides/slide7.png", 
+        "/web-multimedia-dev/media/slides/slide8.png",
     );
 
     var len = images.length;
