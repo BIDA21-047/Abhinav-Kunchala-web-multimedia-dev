@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!---Setting the viewport to make website scalable to different display sizes-->
+    <meta name="viewpport" content="width-device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="abhinav" content="movie theater website">
+    <!--The following code links a icons to the webpage-->
+    <script src="https://kit.fontawesome.com/922c91d3b0.js" crossorigin="anonymous"></script>
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="/css/styles.css">
+    <title> 
+        Contacts
+    </title>
+</head>
+
+<header> 
+    <!--Logo Section -->
+    
+        <a href="/page/index.html" class="logo">  <img src="/media/images/logoV2_80x80.png" alt="Motion Works logo"></a>
+        <ul class="navigation">
+    <!-- Full Screen Menu-->
+            <li><a  href="/page/index.html">Home</a></li>
+            <li><a  href="/page/movie_page.html">Now Showing</a></li>
+            <div class="dropdown">
+                <li><a  href="/page/genre.html">Genre <i class="fa-solid fa-caret-down"></i></a></li>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="/page/action.html"> Action</a></li>
+                            <li><a href="/page/adventure.html"> Adventure</a></li> 
+                            <li><a href="/page/animation.html"> Animation</a></li>
+                            <li><a href="/page/sci_fi.html"> Sci-Fi</a></li>
+                            <li><a href="/page/drama.html"> Drama</a></li>
+                            <li><a href="/page/horror.html"> Horror</a></li>
+                        </ul>
+                </div>
+            
+            </div>
+            <li><a  href="/page/upcoming.html">Upcoming</a></li>
+            <li><a  class="point" href="/page/contacts.html">Contacts</a></li>
+            <li><a  href="/page/feedback.html">Feedback</a></li>
+        </ul>
+  
+        
+    <!-- Search Bar-->
+        <div class="search">
+            <input type="text" placeholder="search">
+            <i class="fa-solid fa-search"></i>
+        </div>
+    
+    <!--Mobile Menu-->
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+    
+            <li><a href="/page/index.html">Home</a></li>
+            <li><a href="/page/movie_page.html">Now Showing</a></li>
+            <li><a class="point" href="/page/genre.html">Genre</a></li>
+            <li><a href="/page/upcoming.html">Upcoming</a></li>
+            <li><a href="/page/contacts.html">Contacts</a></li>
+            <li><a href="/page/feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+    </header>
+
+<body>
+<div class="cContainer">
+    <div class="contacts_grid_info">
+        <div class="contacts_info" id="Contacts">
+            <h1>Contact Us</h1>
+        </div>
+
+        <div class="contacts_info" id="query">
+            <h2> Got a query or need to contact us?  </h2>
+        </div>
+
+        <div class="contacts_info" id="info">
+            <p> Reach us during operating hours through email, telephone or whatsapp</p>
+        </div>
+
+        <div class="contacts_info" id="operating">
+            <p> Mon-Fridays &ensp; 09:00 to 22:00</p>
+        </div>
+
+        <div class="contacts_info" id="operating">
+            <div class="contacts_info">
+                <p>Sat-Sunday &ensp; 09:00 to 22:00</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="contacts_container">
+        
+        
+            <div class="contact_box">
+
+                <!-- Sarona City Mall  -->
+                <div class="mall-contacts">
+                    <div class="mall-img">
+                        <img src="/media/images/locations/sarona3_800x535.png" class="mall" alt="Sarona City Location">
+                    </div>
+                    <div class="mall_info">
+                    <h1> <i class="fa-solid fa-envelope"></i>&ensp; motion@sarona.co.bw </h1>
+                    <h1> <i class="fa-solid fa-phone"></i>&ensp;+267 399 999</h1>
+                    <h1> <i class="fa-solid fa-mobile-screen"></i>&ensp;+267 71 567 998</h1>
+                    </div>
+                </div>
+
+                <!-- Game City Mall -->
+                <div class="mall-contacts">
+                    <div class="mall-img">
+                        <img src="/media/images/locations/gamecity1.jpg"  class="mall" alt="Game City Location">
+                    </div>
+                    <div class="mall_info">
+                        <h1> <i class="fa-solid fa-envelope"></i>&ensp; motion@gamecity.co.bw </h1>
+                        <h1> <i class="fa-solid fa-phone"></i>&ensp;+267 399 889</h1>
+                        <h1> <i class="fa-solid fa-mobile-screen"></i>&ensp;&ensp;+267 71 677 918</h1>
+                    </div>
+                </div>
+
+                <!-- Riverwalk Mall  -->
+                <div class="mall-contacts">
+                    <div class="mall-img">
+                        <img src="/media/images/locations/riverwalk1.jpg" class="mall" alt="Riverwalk Location">
+                    </div>
+                    <div class="mall_info">
+                        <h1> <i class="fa-solid fa-envelope"></i>&ensp;motion@riverwalk.co.bw </h1>
+                        <h1> <i class="fa-solid fa-phone"></i>&ensp;+267 398 665</h1>
+                        <h1> <i class="fa-solid fa-mobile-screen"></i>&ensp;&ensp; +267 71 455 298</h1>
+                    </div>
+                </div>
+
+            </div>
+            <div class="map_box">
+                <iframe class = "google-maps"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3627.2837800278453!2d25.9478187!3d-24.6139023!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb5d0db569dfd3%3A0x35dd93ad84347aaf!2sSarona%20City%20Mall!5e0!3m2!1sen!2sbw!4v1652455259966!5m2!1sen!2sbw" 
+                width="450" height="250" style="border-radius:25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <iframe class = "google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.1544651734403!2d25.877467314487554!3d-24.687216310011614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb5a3dd281ddb5%3A0xaea8dd1bea8408d3!2sGame%20City%20Shopping%20Mall!5e0!3m2!1sen!2sbw!4v1652455635752!5m2!1sen!2sbw"
+                width="450" height="250"  style="border-radius:25px;"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <iframe  class = "google-maps"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.4630509052517!2d25.93302361448722!3d-24.676604109601822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebb5bf1e9c952ed%3A0x48f175dca05734d7!2sRiverwalk%20Mall!5e0!3m2!1sen!2sbw!4v1652455778635!5m2!1sen!2sbw"  width="450" height="250" style="border-radius:25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        
+    </div>
+</div>
+
+
+<script src="/js/java.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="container">
+        <div class="map">
+
+        </div>
+        <div class="row">
+            <div class="footer-col">
+                <h4>Motion Works</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Promotions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#">Venue and Event Hire</a></li>
+                    <li><a href="#">Conferences</a></li>
+                    <li><a href="#">Private screenings</a></li>
+                    <li><a href="#">Cooperate Tickets & Gifts</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">email: motionworks@cm.co.bw</a></li>
+                    <li><a href="#">sales: sales@cm.co.bw</a></li>
+                    <li><a href="#">phone: +267 321 123</a></li>
+                    <li><a href="#">phone: +267 798 654 21</a></li>
+                    <li><a href="#">fax:   +267 378 987</a></li>
+            
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>  

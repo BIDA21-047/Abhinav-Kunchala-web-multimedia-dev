@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!---Setting the viewport to make website scalable to different display sizes-->
+    <meta name="viewpport" content="width-device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="abhinav" content="movie theater website">
+    <!--The following code links a icons to the webpage-->
+    <script src="https://kit.fontawesome.com/922c91d3b0.js" crossorigin="anonymous"></script>
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="/css/styles.css">
+    <title> 
+        Upcoming
+    </title>
+   
+</head>
+
+
+<header> 
+  <!--Logo Section -->
+  
+      <a href="/page/index.html" class="logo">  <img src="/media/images/logoV2_80x80.png" alt="Motion Works logo"></a>
+      <ul class="navigation">
+  <!-- Full Screen Menu-->
+          <li><a  href="/page/index.html">Home</a></li>
+          <li><a  href="/page/movie_page.html">Now Showing</a></li>
+          <div class="dropdown">
+              <li><a  href="/page/genre.html">Genre <i class="fa-solid fa-caret-down"></i></a></li>
+                  <div class="dropdown-content">
+                      <ul>
+                          <li><a href="/page/action.html"> Action</a></li>
+                          <li><a href="/page/adventure.html"> Adventure</a></li> 
+                          <li><a href="/page/animation.html"> Animation</a></li>
+                          <li><a href="/page/sci_fi.html"> Sci-Fi</a></li>
+                          <li><a href="/page/drama.html"> Drama</a></li>
+                          <li><a href="/page/horror.html"> Horror</a></li>
+                      </ul>
+              </div>
+          
+          </div>
+          <li><a  class="point" href="/page/upcoming.html">Upcoming</a></li>
+          <li><a  href="/page/contacts.html">Contacts</a></li>
+          <li><a  href="/page/feedback.html">Feedback</a></li>
+      </ul>
+
+      
+  <!-- Search Bar-->
+      <div class="search">
+          <input type="text" placeholder="search">
+          <i class="fa-solid fa-search"></i>
+      </div>
+  
+  <!--Mobile Menu-->
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+  
+          <li><a href="/page/index.html">Home</a></li>
+          <li><a href="/page/movie_page.html">Now Showing</a></li>
+          <li><a class="point" href="/page/genre.html">Genre</a></li>
+          <li><a href="/page/upcoming.html">Upcoming</a></li>
+          <li><a href="/page/contacts.html">Contacts</a></li>
+          <li><a href="/page/feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+  </header>
+
+
+<body>
+    <div class="upcoming_container">
+      <div class="upcoming_banner">
+           <div class="banner_btn">By Day <i class="fa-solid fa-filter"></i></div>
+           <div class="banner_btn">By Title  <i class="fa-solid fa-filter"></i></div>
+           <div class="banner_btn">By Rating  <i class="fa-solid fa-filter"></i></div>
+      </div>
+  
+      <!--Black Phone Movie -->
+      <main>
+        <div class="upcoming_grid">
+          <div class="upcoming_img">
+              <img src="/media/images/posters/movie9.jpg" alt="The Black Phone Movie Poster">
+          </div>
+          <div class="upcoming_info"> 
+           <h1>THE BLACK PHONE </h1>
+           <div class="upcoming_date">
+               <i class='fa fa-clock-o'></i> &ensp;Starts in 4 days </div>
+           <div class="upcoming_text">   
+               <p>  Finney Shaw is a shy but clever 13-year-old boy who's being held in a soundproof basement by a sadistic, masked killer.<br> When a disconnected phone on the wall starts to ring, he soon discovers that he can hear the voices of the murderer's previous victims  and  they are dead set on making sure that what happened to them doesn't happen to Finney.
+               </p> 
+  
+          </div>
+            <div class="movie_date">
+              <h2>Release Date: Fri 3rd June 2022</h2>
+            </div>
+           <div class="upcoming_rating">
+              <h2> 102 mins | Rated PG16</h2>
+           </div>
+  
+           <div class="upcoming_trailer">
+            <a
+               href="https://www.youtube.com/watch?v=3eGP6im8AZA" 
+               data-youtube-id="3eGP6im8AZA" 
+               class=" button primary js-trigger-video-modal mButton">
+              Movie|Trailer
+            </a>
+  
+          </div>
+          </div>
+          
+        </main>
+  
+          <!--Top Gun: Maverick  -->
+          <main>
+            <div class="upcoming_grid">
+              <div class="upcoming_img">
+                  <img src="/media/images/posters/top_gun2.jpeg" alt="Top Gun: Maverick Movie Poster">
+              </div>
+              <div class="upcoming_info"> 
+               <h1>TOP GUN: MAVERICK</h1>
+               <div class="upcoming_date">
+                   <i class='fa fa-clock-o'></i> &ensp;Starts in 15 days </div>
+               <div class="upcoming_text">   
+                   <p>  After more than 30 years of service as one of the Navy's top aviators, Pete "Maverick" Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him.
+                   </p> 
+      
+              </div>
+                <div class="movie_date">
+                  <h2>Release Date: Fri 10th June 2022</h2>
+                </div>
+               <div class="upcoming_rating">
+                  <h2> 137 mins | Rated PG13</h2>
+               </div>
+      
+               <div class="upcoming_trailer">
+                <a
+                   href="https://www.youtube.com/watch?v=ivYtTkshWAY" 
+                   data-youtube-id="ivYtTkshWAY" 
+                   class=" button primary js-trigger-video-modal mButton">
+                  Movie|Trailer
+                </a>
+      
+              </div>
+              </div>
+              
+            </main>
+
+            <!--Operation Fortune: Ruse de Guerre-->
+            <main>
+                <div class="upcoming_grid">
+                  <div class="upcoming_img">
+                      <img src="/media/images/posters/operation_fortune.jpg" alt="Operation Fortine: Ruse De Guerre Movie Poster">
+                  </div>
+                  <div class="upcoming_info"> 
+                   <h1>OPERATION FORTUNE: RUSE DE GUERRE
+                </h1>
+                   <div class="upcoming_date">
+                       <i class='fa fa-clock-o'></i> &ensp;Starts in 10 days </div>
+                   <div class="upcoming_text">   
+                       <p>  Fortune and his crew recruit Hollywood's biggest movie star, Danny Francesco, to help them on their globe-trotting mission to save the world.
+                       </p> 
+          
+                  </div>
+                    <div class="movie_date">
+                      <h2>Release Date: Fri 20th June 2022</h2>
+                    </div>
+                   <div class="upcoming_rating">
+                      <h2> 114 mins | Rated PG18</h2>
+                   </div>
+          
+                   <div class="upcoming_trailer">
+                    <a
+                       href="https://www.youtube.com/watch?v=W8Sqk1GcqxY" 
+                       data-youtube-id="W8Sqk1GcqxY" 
+                       class=" button primary js-trigger-video-modal mButton">
+                      Movie|Trailer
+                    </a>
+          
+                  </div>
+                  </div>
+                  
+                </main>
+               
+                <!--Minions: The Rise of Gru  -->
+                <main>
+                    <div class="upcoming_grid">
+                      <div class="upcoming_img">
+                          <img src="/media/images/posters/minions_gru.jpg" alt="Minions: The rise of GRU movie poster">
+                      </div>
+                      <div class="upcoming_info"> 
+                       <h1>  MINIONS: THE RISE OF GRU</h1>
+                       <div class="upcoming_date">
+                           <i class='fa fa-clock-o'></i> &ensp;Starts in 20 days </div>
+                       <div class="upcoming_text">   
+                           <p> When the interview turns disastrous, Gru and his Minions go on the run with the Vicious 6 hot on their tails. Luckily, he finds an unlikely source for guidance  Wild Knuckles himself  and soon discovers that even bad guys need a little help from their friends.
+                           </p> 
+              
+                      </div>
+                        <div class="movie_date">
+                          <h2>Release Date: Fri 17th June 2022</h2>
+                        </div>
+                       <div class="upcoming_rating">
+                          <h2> 90 mins | Rated PG</h2>
+                       </div>
+              
+                       <div class="upcoming_trailer">
+                        <a
+                           href="https://www.youtube.com/watch?v=6DxjJzmYsXo" 
+                           data-youtube-id="6DxjJzmYsXo" 
+                           class=" button primary js-trigger-video-modal mButton">
+                          Movie|Trailer
+                        </a>
+              
+                      </div>
+                      </div>
+                      
+                    </main>
+
+                     <!--Thor: Love and Thunder-->
+                <main>
+                    <div class="upcoming_grid">
+                      <div class="upcoming_img">
+                          <img src="/media/images/posters/thor_movie.jpg" alt="Thor: Love and Thunder movie poster ">
+                      </div>
+                      <div class="upcoming_info"> 
+                       <h1>  THOR: LOVE AND THUNDER
+                    </h1>
+                       <div class="upcoming_date">
+                           <i class='fa fa-clock-o'></i> &ensp;Starts in 25 days </div>
+                       <div class="upcoming_text">   
+                           <p> To combat the threat, Thor enlists the help of King Valkyrie (Tessa Thompson), Korg (Taika Waititi) and ex-girlfriend Jane Foster (Natalie Portman), who  to Thor's surprise  inexplicably wields his magical hammer, Mjolnir, as the Mighty Thor. Together, they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher's vengeance and stop him before it's too late.
+
+                           </p> 
+              
+                      </div>
+                        <div class="movie_date">
+                          <h2>Release Date: Fri 17th June 2022</h2>
+                        </div>
+                       <div class="upcoming_rating">
+                          <h2> 90 mins | Rated PG</h2>
+                       </div>
+              
+                       <div class="upcoming_trailer">
+                        <a
+                           href="https://www.youtube.com/watch?v=tgB1wUcmbbw" 
+                           data-youtube-id="tgB1wUcmbbw" 
+                           class=" button primary js-trigger-video-modal mButton">
+                          Movie|Trailer
+                        </a>
+              
+                      </div>
+                      </div>
+                      
+                    </main>
+        
+    </div>
+  
+    
+        
+        
+        <!-- video modal -->
+        <section class="video-modal">
+        
+            <!-- Modal Content Wrapper -->
+            <div 
+                 id="video-modal-content" class="video-modal-content"
+             >
+              
+  <!-- iframe -->
+               <iframe 
+                  id="youtube" 
+                  width="100%" 
+                  height="100%" 
+                  frameborder="0" 
+                  allow="autoplay" 
+                  allowfullscreen 
+                  src=
+                ></iframe>
+        
+                <a 
+                    href="#" 
+                    class="close-video-modal" 
+                >
+                    <!-- X close video icon -->
+                  <svg 
+                    version="1.1" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 32 32" 
+                    style="enable-background:new 0 0 32 32;" 
+                    xml:space="preserve" 
+                    width="24" 
+                    height="24" 
+                  >
+        
+                    <g id="icon-x-close">
+                        <path fill="#ffffff" d="M30.3448276,31.4576271 C29.9059965,31.4572473 29.4852797,31.2855701 29.1751724,30.980339 L0.485517241,2.77694915 C-0.122171278,2.13584324 -0.104240278,1.13679247 0.52607603,0.517159487 C1.15639234,-0.102473494 2.17266813,-0.120100579 2.82482759,0.477288136 L31.5144828,28.680678 C31.9872448,29.1460053 32.1285698,29.8453523 31.8726333,30.4529866 C31.6166968,31.0606209 31.0138299,31.4570487 30.3448276,31.4576271 Z" id="Shape"></path>
+                        <path fill="#ffffff" d="M1.65517241,31.4576271 C0.986170142,31.4570487 0.383303157,31.0606209 0.127366673,30.4529866 C-0.12856981,29.8453523 0.0127551942,29.1460053 0.485517241,28.680678 L29.1751724,0.477288136 C29.8273319,-0.120100579 30.8436077,-0.102473494 31.473924,0.517159487 C32.1042403,1.13679247 32.1221713,2.13584324 31.5144828,2.77694915 L2.82482759,30.980339 C2.51472031,31.2855701 2.09400353,31.4572473 1.65517241,31.4576271 Z" id="Shape"></path>
+                    </g>
+        
+                  </svg>
+                </a>
+        
+            </div>
+  <!-- end modal content wrapper -->
+        
+        
+  <!-- clickable overlay element -->
+            <div class="overlay"></div>
+        
+        
+        </section>
+        <!-- end video modal -->
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+       
+        <script src="/js/java.js"></script>
+  </body>
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="map">
+
+        </div>
+        <div class="row">
+            <div class="footer-col">
+                <h4>Motion Works</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Promotions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#">Venue and Event Hire</a></li>
+                    <li><a href="#">Conferences</a></li>
+                    <li><a href="#">Private screenings</a></li>
+                    <li><a href="#">Cooperate Tickets & Gifts</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">email: motionworks@cm.co.bw</a></li>
+                    <li><a href="#">sales: sales@cm.co.bw</a></li>
+                    <li><a href="#">phone: +267 321 123</a></li>
+                    <li><a href="#">phone: +267 798 654 21</a></li>
+                    <li><a href="#">fax:   +267 378 987</a></li>
+            
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+
+
+</html>  
+        

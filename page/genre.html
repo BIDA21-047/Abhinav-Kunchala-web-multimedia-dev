@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!---Setting the viewport to make website scalable to different display sizes-->
+    <meta name="viewpport" content="width-device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="abhinav" content="movie theater website">
+    <!--The following code links a icons to the webpage-->
+    <script src="https://kit.fontawesome.com/922c91d3b0.js" crossorigin="anonymous"></script>
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="/css/styles.css">
+    <title> 
+        Categories
+    </title>
+</head>
+
+<header> 
+    <!--Logo Section -->
+    
+        <a href="/page/index.html" class="logo">  <img src="/media/images/logoV2_80x80.png" alt="Motion Works logo"></a>
+        <ul class="navigation">
+    <!-- Full Screen Menu-->
+            <li><a  href="/page/index.html">Home</a></li>
+            <li><a  href="/page/movie_page.html">Now Showing</a></li>
+            <div class="dropdown">
+                <li><a  class="point" href="/page/genre.html">Genre <i class="fa-solid fa-caret-down"></i></a></li>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="/page/action.html"> Action</a></li>
+                            <li><a href="/page/adventure.html"> Adventure</a></li> 
+                            <li><a href="/page/animation.html"> Animation</a></li>
+                            <li><a href="/page/sci_fi.html"> Sci-Fi</a></li>
+                            <li><a href="/page/drama.html"> Drama</a></li>
+                            <li><a href="/page/horror.html"> Horror</a></li>
+                        </ul>
+                </div>
+            
+            </div>
+            <li><a  href="/page/upcoming.html">Upcoming</a></li>
+            <li><a  href="/page/contacts.html">Contacts</a></li>
+            <li><a  href="/page/feedback.html">Feedback</a></li>
+        </ul>
+    <!-- Search Bar-->
+        <div class="search">
+            <input type="text" placeholder="search">
+            <i class="fa-solid fa-search"></i>
+        </div>
+    
+    <!--Mobile Menu-->
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+    
+            <li><a href="/page/index.html">Home</a></li>
+            <li><a href="/page/movie_page.html">Now Showing</a></li>
+            <li><a class="point" href="/page/genre.html">Genre</a></li>
+            <li><a href="/page/upcoming.html">Upcoming</a></li>
+            <li><a href="/page/contacts.html">Contacts</a></li>
+            <li><a href="/page/feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+    </header>
+    
+
+
+<body>
+<div class="genre_container">
+<!-- Action Category -->
+    <div class="genre_box">
+      
+        <!-- The video -->
+        <video autoplay muted loop id="myVideo">
+        <source src="/media/videos/action_clip.mp4" type="video/mp4">
+        </video>
+
+        <!-- Optional: some overlay text to describe the video -->
+        <div class="genre_content">
+        <h1>Action </h1>
+        <p>Guns, Explosions, Heart Throbs. Don't miss a moment of the latest block buster action this winter</p>
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <button id="myBtn"><a  href="/page/action.html">See more</a></button>
+        </div>
+            
+    </div>
+
+<!-- Drama Movies Genre -->
+    <div class="genre_box">
+        <!-- The video -->
+            <video autoplay muted loop id="myVideo">
+            <source src="/media/videos/drama_clip.mp4" type="video/mp4">
+            </video>
+            
+        <!-- Optional: some overlay text to describe the video -->
+            <div class="genre_content">
+                <h1>Drama </h1>
+                <p>Shock, betrayl, hope, revelation. Watch Emmy Award Ainning stars light up the big screen with stunning performances</p>
+                <!-- Use a button to pause/play the video with JavaScript -->
+                <button id="myBtn"><a  href="/page/drama.html">See more</a></button>
+            </div>
+        
+    </div>
+
+<!-- Horror Movies Genre -->
+    <div class="genre_box">
+        <!-- The video -->
+        <video autoplay muted loop id="myVideo">
+            <source src="/media/videos/horror_clip.mp4" type="video/mp4">
+            </video>
+            
+        <!-- Optional: some overlay text to describe the video -->
+            <div class="genre_content">
+                <h1>Horror </h1>
+                <p>Guts and Gore. From the latest Morbius to Penny Worths Creeping smile, get ready for the latest horror installments</p>
+                <!-- Use a button to pause/play the video with JavaScript -->
+                <button id="myBtn" ><a  href="/page/horror.html">See more</a></button>
+            </div>
+    </div>
+
+<!-- Sci-fi Genre -->
+    <div class="genre_box">
+         <!-- The video -->
+         <video autoplay muted loop id="myVideo">
+            <source src="/media/videos/scifi_clips.mp4" type="video/mp4">
+            </video>
+            
+        <!-- Optional: some overlay text to describe the video -->
+            <div class="genre_content">
+                <h1>Sci-fi</h1>
+                <p>Tin Foil Hats, Little Green. Get your sci-fi fix of the latest and greatest blockbuster hits like Dune, Moonfall and much more</p>
+                <!-- Use a button to pause/play the video with JavaScript -->
+                <button id="myBtn" ><a  href="/page/sci_fi.html">See more</a></button>
+            </div>
+
+
+    </div>
+
+
+<!-- Animation Genre -->
+    <div class="genre_box">
+       <!-- The video -->
+       <video autoplay muted loop id="myVideo">
+        <source src="/media/videos/animation_clip.mp4" type="video/mp4">
+        </video>
+
+        <!-- Optional: some overlay text to describe the video -->
+        <div class="genre_content">
+        <h1>Animation </h1>
+        <p> Something for the kids or something for you? Stay young forever with our loony, waky, and fun animated movies from Pixar, Disney and many leading studios</p>
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <button id="myBtn" ><a  href="/page/animation.html">See more</a></button>
+        </div>
+        
+    </div>
+
+    
+<!-- Adventure Genre -->
+    <div class="genre_box">
+        <!-- The video -->
+        <video autoplay muted loop id="myVideo">
+            <source src="/media/videos/adventure_clip.mp4" type="video/mp4">
+            </video>
+    
+            <!-- Optional: some overlay text to describe the video -->
+            <div class="genre_content">
+            <h1>Adventure</h1>
+            <p>Get lost in the jungle this year with Tom Hollands Uncharted, Channing Tatum's The Lost City or Chris Hemsworths Thor Love and Thunder</p>
+            <!-- Use a button to pause/play the video with JavaScript -->
+            <button id="myBtn" ><a  href="/page/adventure.html">See more</a></button>
+            </div>
+        
+    </div>
+</div>
+<script src="/js/java.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="container">
+        <div class="map">
+
+        </div>
+        <div class="row">
+            <div class="footer-col">
+                <h4>Motion Works</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Promotions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#">Venue and Event Hire</a></li>
+                    <li><a href="#">Conferences</a></li>
+                    <li><a href="#">Private screenings</a></li>
+                    <li><a href="#">Cooperate Tickets & Gifts</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">email: motionworks@cm.co.bw</a></li>
+                    <li><a href="#">sales: sales@cm.co.bw</a></li>
+                    <li><a href="#">phone: +267 321 123</a></li>
+                    <li><a href="#">phone: +267 798 654 21</a></li>
+                    <li><a href="#">fax:   +267 378 987</a></li>
+            
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+
+
+
+</html>  
