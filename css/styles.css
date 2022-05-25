@@ -1188,7 +1188,7 @@ li a{
 -----------------------------------------*/
 .video-modal,
 .video-modal .overlay {
-    position: relative;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -1227,7 +1227,7 @@ li a{
 }
 .video-modal .overlay {
   z-index: 0;
-  background: rgba(48,213,200,0.82); /* overlay color */
+  background: rgba(48,213,200,0.1); /* overlay color */
 
   opacity: 0.0;
 
@@ -1237,8 +1237,8 @@ li a{
 
 
 .video-modal-content {
-    position: relative;
-    top: auto;
+    position: absolute;
+    top: 100px;
     right: auto;
     bottom: auto;
     left: auto;
